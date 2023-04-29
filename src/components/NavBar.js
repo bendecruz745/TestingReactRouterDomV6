@@ -23,11 +23,18 @@ function NavBar() {
         <Navbar.Collapse id="navbarScroll" className="justify-content-end">
           <Nav navbarScroll>
             <Link
-              to="BasicChatApp/Profile"
+              to="/"
               className="nav-link"
               onClick={() => setExpanded(false)}
             >
-              SomeRandoLink
+              FirstComponent
+            </Link>
+            <Link
+              to="/SecondComponent"
+              className="nav-link"
+              onClick={() => setExpanded(false)}
+            >
+              SecondComponent
             </Link>
           </Nav>
         </Navbar.Collapse>

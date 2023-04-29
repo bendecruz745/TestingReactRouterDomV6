@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import { Route, Routes } from "react-router-dom";
 import FirstComponent from "./components/FirstComponent";
+import SecondComponent from "./components/SecondComponent";
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<FirstComponent />} />
-        {/* <Route path="/BasicChatApp" element={} />
-      <Route path="/BasicChatApp/Login" element={} /> */}
+        <Route path="/SecondComponent" element={<SecondComponent />} />
+        {/*<Route path="/BasicChatApp/Login" element={} /> */}
       </Routes>
     </div>
   );
