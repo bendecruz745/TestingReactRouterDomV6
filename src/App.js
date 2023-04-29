@@ -2,12 +2,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import { Route, Routes } from "react-router-dom";
+import FirstComponent from "./components/FirstComponent";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <h1>This is a test project for figuring out React Router V6</h1>
+      <Routes>
+        <Route path="/" element={<FirstComponent />} />
+        {/* <Route path="/BasicChatApp" element={} />
+      <Route path="/BasicChatApp/Login" element={} /> */}
+      </Routes>
     </div>
   );
 }
